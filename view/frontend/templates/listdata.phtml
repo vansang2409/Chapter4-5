@@ -1,0 +1,48 @@
+<?php
+//$collection = $this->getTestCollection();
+$movieTable = $this->getTableMovie();
+//print_r($movieTable);
+$actorTable = $this->getTableActor();
+//print_r($actorTable);
+$directorTable = $this->getTableDirector();
+//print_r($directorTable);
+//foreach ($actorTable as $value){
+//    echo $value['name'];
+//}
+?>
+
+<table class="data table" id="test-data-table">
+    <caption class="table-caption">Mangenest Movie Data</caption>
+    <thead>
+    <tr>
+        <th scope="col" class="col id">Movie Id</th>
+        <th scope="col" class="col Name">Movie Name</th>
+        <th scope="col" class="col director">Director</th>
+        <th scope="col" class="col actor">Actor</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <?php foreach ($movieTable as $key => $data): ?>
+    <tr>
+        <td data-th="Id" class="col id"><?php echo $data['movie_id']; ?></td>
+        <td data-th="Name" class="col name"><?php echo $data['name']; ?></td>
+        <td data-th="Name" class="col name">
+            <?php foreach ($directorTable as $key1 => $data1): ?>
+               <p> <?php
+                    if($data1['director_id']==$data['director_id']){
+                        echo $data1['name'];
+                   }
+                   ?></p>
+            <?php endforeach; ?>
+        </td>
+        <td data-th="Name" class="col name">
+            <?php foreach ($actorTable as $key2 => $data2): ?>
+                <p> <?php echo $data2['name']; ?></p>
+            <?php endforeach; ?>
+        </td>
+    </tr>
+    <?php endforeach; ?>
+
+    </tbody>
+</table>
