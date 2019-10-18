@@ -1,0 +1,23 @@
+<?php
+   $movieTable = $this->getTableMovie();
+   //print_r($movieTable);
+?>
+<div class="col-m-4">
+    <table class="admin__table-secondary">
+            <caption class="table-caption">Mangenest Movie Data</caption>
+            <thead>
+            <tr>
+                <th scope="col" class="col id">Movie Id</th>
+                <th scope="col" class="col Name">Movie Name</th>
+            </tr>
+            </thead>
+        <tbody>
+        <?php foreach($movieTable as $key => $data): ?>
+            <tr>
+                <td data-th="Id" class="col id"><?php echo $data['movie_id']; ?></td>
+                <td data-th="Name" class="col name"><?php echo $data['name']; ?></td>
+            </tr>
+        <?php endforeach; ?>
+        </tbody>
+    </table>
+</div>

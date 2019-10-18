@@ -1,0 +1,30 @@
+<script>
+    require([
+        'jquery',
+        'prototype',
+    ], function(jQuery){
+        function function_name() {
+            params = {
+            };
+
+            new Ajax.Request('<?php echo $block->getAjaxUrl() ?>', {
+                loaderArea:     false,
+                asynchronous:   true,
+                parameters:     params,
+                onSuccess: function(transport) {
+                    var response = JSON.parse(transport.responseText);
+                }
+            });
+        }
+
+        jQuery('#btnid').click(function () {
+            alter('hello boy;');
+        });
+        jQuery('#actor').click(function () {
+            alter('hello boy;');
+        });
+    });
+</script>
+<?php echo $block->getDisable() ?>
+<?php echo $block->getButtonHtml() ?>
+
