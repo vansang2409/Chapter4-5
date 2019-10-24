@@ -1,0 +1,34 @@
+<fieldset class="fieldset create account" data-hasrequired="<?php /* @escapeNotVerified */
+echo __('* Required Fields') ?>">
+    <legend class="legend">
+        <span>
+        <?php
+        /* @escapeNotVerified */
+        echo __('Avatar')
+        ?>
+        </span>
+    </legend>
+<!--    twilio_image-->
+    <p>
+        <?php if ($logo = $block->getLogoUrl()): ?>
+            <img src="<?php echo $logo; ?>"  />
+<!--        --><?php //echo $logo; ?>
+        <?php endif; ?>
+<!--      --><?php
+//      $productImageAttr = $product->getCustomAttribute( 'twilio_image' );
+//      $productImage = $this->helper('Magento\Catalog\Helper\Image')->init($product, 'twilio_image')->setImageFile($productImageAttr->getValue());
+//      ?>
+<!--        <img src="--><?php //echo $productImage->getUrl() ?><!--" alt="--><?php //echo $block->escapeHtml($product->getTitle()) ?><!--" />-->
+    </p>
+
+    <p>
+    <div class="field twilio_image required">
+        <label for="" class="label"><span><?php /* @escapeNotVerified */
+                echo __('Logo Image') ?></span></label>
+        <div class="control">
+            <input type="file" name="twilio_image" id="twilio_image" title="<?php /* @escapeNotVerified */
+            echo __('Logo Image') ?>" class="input-text" data-validate="{required:false}">
+        </div>
+    </div>
+    </p>
+</fieldset>

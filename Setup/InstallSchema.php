@@ -6,6 +6,9 @@ use \Magento\Framework\Setup\InstallSchemaInterface;
 use \Magento\Framework\Setup\ModuleContextInterface;
 use \Magento\Framework\Setup\SchemaSetupInterface;
 use \Magento\Framework\DB\Ddl\Table;
+use Magento\Eav\Setup\EavSetup;
+use Magento\Eav\Setup\EavSetupFactory;
+use Magento\Framework\Setup\ModuleDataSetupInterface;
 
 /**
  * Class InstallSchema
@@ -18,8 +21,19 @@ class InstallSchema implements InstallSchemaInterface
      * {@inheritdoc}
      * @SuppressWarnings(PHPMD.ExcessiveMethodLength)
      */
+    private $eavSetupFactory;
+
+    public function __construct(EavSetupFactory $eavSetupFactory) {
+        $this->eavSetupFactory = $eavSetupFactory;
+    }
+
+
     public function install(SchemaSetupInterface $setup, ModuleContextInterface $context)
     {
+        $eavSetup = $this->eavSetupFactory->create(['setup' => $setup]);
+        $eavSetup->removeAttribute(
+            \Magento\Customer\Model\Customer::ENTITY,
+            'attribute_name'); //Attribute name here
         $installer = $setup;
 
         $installer->startSetup();

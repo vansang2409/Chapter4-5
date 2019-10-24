@@ -24,6 +24,7 @@ class Addmovie extends Action
 
     public function execute()
     {
+        $this->_eventManager->dispatch('Movie_change_rating',[$this->getRequest()->getParams()]);
         $resultRedirect = $this->resultRedirectFactory->create();
         $data = $this->getRequest()->getParams();
 //        print_r($data);

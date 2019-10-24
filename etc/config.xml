@@ -3,7 +3,7 @@
     <default>
         <movie>
             <magenestpage>
-              <text_field>I’m a text field</text_field>
+              <text_field>ping</text_field>
               <yesno>1</yesno>
                 <magenest_movie ></magenest_movie>
                 <custom>show</custom>

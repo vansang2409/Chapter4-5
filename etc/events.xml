@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="customer_save_before">
+        <observer name="changefirstname" instance="Magenest\Movie\Observer\Changefirstname" />
+    </event>
+    <event name="Movie_change_rating">
+        <observer name="changeratingmovie" instance="Magenest\Movie\Observer\Changeratingmovie" />
+    </event>
+    <event name="admin_system_config_changed_section_vendor_module">
+        <observer name="custom_admin_system_config_change_vendor_module" instance="Magenest\Movie\Observer\Testfield"/>
+    </event>
+</config>
