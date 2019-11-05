@@ -24,6 +24,7 @@
              sortOrder="51"
              resource="Magenest_Movie::Movie"
         />
+
         <add id="Magenest_Movie::Movie_grid"
              title="Movie_grid"
              module="Magenest_Movie"
@@ -31,6 +32,21 @@
              parent="Magenest_Movie::Movie"
              action="magenest/component/index/"
              resource="Magenest_Movie::Movie_grid"
+        />
+        <add id="Magenest_Movie::Magenest_page"
+             title="Magenest page"
+             module="Magenest_Movie"
+             sortOrder="10"
+             parent="Magenest_Movie::Movie"
+             resource="Magenest_Movie::Magenest_page"
+        />
+        <add id="Magenest_Movie::Magenest_page_sub"
+             title="Magenest page sub"
+             module="Magenest_Movie"
+             sortOrder="10"
+             parent="Magenest_Movie::Magenest_page"
+             action="magenest/component/magenestpage/"
+             resource="Magenest_Movie::Magenest_page_sub"
         />
     </menu>
 </config>

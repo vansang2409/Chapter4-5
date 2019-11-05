@@ -10,7 +10,15 @@
 <!--    </legend>-->
     <!--    twilio_image-->
 <div class="box box-avatar">
-    <strong class="box-title"><span>Avatar</span></strong>
+    <legend class="legend">
+                <span>
+                <?php
+                /* @escapeNotVerified */
+                echo __('Avatar')
+                ?>
+                </span>
+    </legend>
+<!--    <strong class="box-title"><span>Avatar</span></strong>-->
     <p>
         <?php if ($logo = $block->getLogoUrl()): ?>
             <img src="<?php echo $logo; ?>"  />

@@ -10,7 +10,9 @@
     <type name="Magento\Checkout\Controller\Cart\Add">
         <plugin name="pluginAddProductToCart" type="Magenest\Movie\Plugin\CartPlugin" sortOrder="10" disabled="false"/>
     </type>
-
+<!--    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">-->
+<!--        <plugin name="Oddevenorder" type="Magenest\Movie\Plugin\OddEvenOrder" sortOrder="60" disabled="false"/>-->
+<!--    </type>-->
     <virtualType name="Magenest\Movie\Model\Resource\Subscription\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
         <arguments>
             <argument name="mainTable" xsi:type="string">magenest_movie</argument>

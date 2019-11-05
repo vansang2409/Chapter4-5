@@ -1,0 +1,17 @@
+<?php
+$num =$this->numofmodule();
+?>
+<legend><h1 >module</h1></legend>
+<hr>
+<table class="table_window" id="test-data-table" style="width: 100%;">
+    <tbody>
+    <tr>
+        <th scope="col" class="col id">Num of all module  :</th>
+        <th scope="col" class="col Name"><?php print_r($num[0]) ; ?></th>
+    </tr>
+    <tr>
+        <th scope="col" class="col id">Num of  module not is magento  :</th>
+        <th scope="col" class="col Name"><?php print_r($num[1]) ; ?></th>
+    </tr>
+    </tbody>
+</table>

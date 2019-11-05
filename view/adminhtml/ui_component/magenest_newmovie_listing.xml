@@ -88,9 +88,14 @@
                 <item name="config" xsi:type="array">
                     <item name="label" xsi:type="string">Movie Rating</item>
                     <item name="visible" xsi:type="boolean">true</item>
-                    <item name="dataType" xsi:type="string">text</item>
+                    <item name="dataType" xsi:type="string">integer</item>
                     <item name="formElement" xsi:type="string">input</item>
                     <item name="source" xsi:type="string">newmovie</item>
+                    <item name="validation" xsi:type="array">
+                        <item name="required-entry" xsi:type="boolean">true</item>
+                        <item name="validate-number" xsi:type="boolean">true</item>
+                        <item name="validate-greater-than-zero" xsi:type="boolean">true</item>
+                    </item>
                 </item>
             </argument>
         </field>
@@ -109,3 +114,83 @@
         </field>
     </fieldset>
 </form>
+<!--        min_text_length-->
+<!--        max_text_length-->
+<!--        max-words-->
+<!--        min-words-->
+<!--        range-words-->
+<!--        letters-with-basic-punc-->
+<!--        alphanumeric-->
+<!--        letters-only-->
+<!--        no-whitespace-->
+<!--        zip-range-->
+<!--        vinUS //US VIN Numbers-->
+<!--        dateITA-->
+<!--        dateNL-->
+<!--        time-->
+<!--        time12h-->
+<!--        phoneUS-->
+<!--        phoneUK-->
+<!--        mobileUK-->
+<!--        stripped-min-length-->
+<!--        email2-->
+<!--        url2-->
+<!--        credit-card-types-->
+<!--        ipv4-->
+<!--        ipv6-->
+<!--        pattern //REGEX-->
+<!--        validate-no-html-tags-->
+<!--        validate-select-->
+<!--        validate-no-empty-->
+<!--        validate-alphanum-with-spaces-->
+<!--        validate-data-->
+<!--        validate-street-->
+<!--        validate-phoneStrict-->
+<!--        validate-phoneLax-->
+<!--        validate-fax-->
+<!--        validate-email-->
+<!--        validate-emailSender-->
+<!--        validate-password-->
+<!--        validate-admin-password-->
+<!--        validate-customer-password-->
+<!--        validate-url-->
+<!--        validate-clean-url-->
+<!--        validate-xml-identifier-->
+<!--        validate-ssn-->
+<!--        validate-zip-us-->
+<!--        validate-date-au-->
+<!--        validate-currency-dollar-->
+<!--        validate-not-negative-number-->
+<!--        validate-zero-or-greater-->
+<!--        validate-greater-than-zero-->
+<!--        validate-css-length-->
+<!--        validate-number-->
+<!--        validate-integer-->
+<!--        validate-number-range-->
+<!--        validate-digits-->
+<!--        validate-digits-range-->
+<!--        validate-range-->
+<!--        validate-alpha-->
+<!--        validate-code-->
+<!--        validate-alphanum-->
+<!--        validate-date-->
+<!--        validate-identifier-->
+<!--        validate-zip-international-->
+<!--        validate-state-->
+<!--        less-than-equals-to-->
+<!--        greater-than-equals-to-->
+<!--        validate-emails-->
+<!--        validate-cc-number-->
+<!--        validate-cc-ukss-->
+<!--        required-entry-->
+<!--        checked-->
+<!--        not-negative-amount-->
+<!--        validate-per-page-value-list-->
+<!--        validate-new-password-->
+<!--        validate-item-quantity-->
+<!--        equalTo-->
+<!--        validate-file-type-->
+<!--        validate-max-size-->
+<!--        validate-if-tag-script-exist-->
+<!--        date_range_min-->
+<!--        date_range_max-->

@@ -1,0 +1,31 @@
+<h2>
+<legend class="legend">
+    <?php
+     echo $block->Title();
+     ?>
+</legend>
+</h2>
+<!--<div >-->
+<!--    <button name="hello" onclick="alert('Hello World')"> hello</button>-->
+<!--</div>-->
+<div  data-mage-init='{"modaljs": {}}'>
+    <button id="login">login</button> <button name="hello" onclick="alert('Hello World')"> hello</button>
+</div>
+<div id="popup-modal" >
+    <legend class="legend">Login</legend>
+    <form>
+        <table class="" style="background-color:plum;margin: 20px; ">
+          <tr>
+              <td>Name</td>
+              <td><input type="text" name="name"></td>
+          </tr>
+            <tr>
+                <td>password</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button type="submit" name="login" onclick="alert('Login Successfuly');reload();">LOGIN</button> </td>
+            </tr>
+        </table>
+    </form>
+</div>

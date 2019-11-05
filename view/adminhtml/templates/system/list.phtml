@@ -1,0 +1,29 @@
+<legend><h1>list data </h1></legend>
+<hr>
+
+<table   style="width: 50%;" class="data-grid data-grid-draggable" data-role="grid">
+
+    <tbody>
+    <tr>
+        <th scope="col" class="col id">Num of Products  :</th>
+        <th scope="col" class="col Name"><?php echo $block->products(); ?></th>
+    </tr>
+    <tr>
+        <th scope="col" class="col id">Num of Orders  :</th>
+        <th scope="col" class="col Name"><?php echo $block->Orders(); ?></th>
+    </tr>
+    <tr>
+        <th scope="col" class="col id">Num of Invoices :</th>
+        <th scope="col" class="col Name"><?php echo $block->Invoices(); ?></th>
+    </tr>
+    <tr>
+        <th scope="col" class="col id">Num of  Creditmemos  :</th>
+        <th scope="col" class="col Name"><?php echo $block->Creditmemos(); ?></th>
+    </tr>
+    <tr>
+        <th scope="col" class="col id">Num of Customers  :</th>
+        <th scope="col" class="col Name"><?php echo $block->customers(); ?></th>
+    </tr>
+    </tbody>
+
+</table>

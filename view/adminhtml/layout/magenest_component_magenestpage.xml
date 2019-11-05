@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_layout.xsd">
+    <update handle="editor"/>
+    <referenceContainer name="left">
+        <block class="Magenest\Movie\Block\Adminhtml\Numofmodule" name="numofmodule" template="Magenest_Movie::system/numofmodule.phtml"/>
+    </referenceContainer>
+    <referenceContainer name="content">
+        <block class="Magenest\Movie\Block\Adminhtml\Numofmodule" name="list" template="Magenest_Movie::system/list.phtml"/>
+    </referenceContainer>
+</layout>
